@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dubai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Roboto:wght@400;700&family=Space+Grotesk:wght@700&family=Work+Sans:wght@100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
         <!-- Logo -->
         <a 
         href="./index.html"
@@ -19,85 +27,82 @@
           </span>
         </a>
         <!-- Navigation -->
-        <nav class="navigation">
-            <ul class="list-navigation">
-                <li class="item-navigation">
-                    <a 
-                    href=""
-                    class="link-navigation">
-                    Buy
-                </a>
-                </li>
-                <li class="item-navigation">
-                    <a 
-                    href=""
-                    class="link-navigation">
-                    Blog
-                </a>
-                </li>
-                <li class="item-navigation">
-                    <a 
-                    href=""
-                    class="link-navigation">
-                    About
-                </a>
-                </li>
-                <li class="item-navigation">
-                    <a 
-                    href=""
-                    class="link-navigation">
-                    Contact
-                </a>
-                </li>
-            </ul>
-        </nav>
-        <button 
-        type="button"
-        class="button-header">
-            Book a consultation
+        <div class="menu-desktop">
+            <nav class="navigation">
+                <ul class="list-navigation">
+                    <li class="item-navigation">
+                        <a
+                        href=""
+                        class="link-navigation">
+                        Buy
+                    </a>
+                    </li>
+                    <li class="item-navigation">
+                        <a
+                        href=""
+                        class="link-navigation">
+                        Blog
+                    </a>
+                    </li>
+                    <li class="item-navigation">
+                        <a
+                        href=""
+                        class="link-navigation">
+                        About
+                    </a>
+                    </li>
+                    <li class="item-navigation">
+                        <a
+                        href=""
+                        class="link-navigation">
+                        Contact
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+            <button
+            type="button"
+            class="button-header">
+                Book a consultation
+            </button>
+            <!-- Adsress -->
+            <address class="address">
+                <ul class="list-address">
+                    <li class="item-address">
+                        <a
+                        href="mailto:dubairealty@mail.com"
+                        class="link-address">
+                        dubairealty@mail.com
+                        </a>
+                    </li>
+                    <li class="item-address">
+                        <a
+                        href="tel:+11111111111"
+                        class="link-address">
+                        +1(111)-111-11-11
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <button type="button" class="button-menu">
+            <svg class="menu-image" width="16" height="12">
+                <use href="./images/icons.svg#icon-menu">
+                </use>
+            </svg>
         </button>
-        <!-- Adsress -->
-        <address class="address">
-            <ul class="list-address">
-                <li class="item-address">
-                    <a 
-                    href="mailto:dubairealty@mail.com"
-                    class="link-address">
-                    dubairealty@mail.com   
-                    </a>
-                </li>
-                <li class="item-address">
-                    <a 
-                    href="tel:+11111111111"
-                    class="link-address">
-                    +1(111)-111-11-11
-                    </a>
-                </li>
-            </ul>
-        </address>
     </header>
     <main>
         <!-- Section 1 -->
-        <section class="container">
-            <div class="hero-container">
-                <p class="paragraph-hero">Lorem ipsum</p>
-                <h1 class="title-hero">Welcome home to luxury</h1>
-                <a 
-                href="" 
-                class="link-hero">
-                Book a consultation
-            </a>
-            </div>
+        <section class="container section-hero">
             <!-- Social icon -->
             <ul class="list-icon">
                 <li class="item-icon">
-                    <a 
-                    href="" 
-                    class="link-icon">
-                      <svg class="icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-facebook">
-                        </use>
-                      </svg>
+                    <a href="" class="link-icon">
+                        <svg class="icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-facebook">
+                            </use>
+                        </svg>
                     </a>
                 </li>
                 <li class="item-icon">
@@ -133,23 +138,32 @@
                     </a>
                 </li>
             </ul>
+            <div class="hero-container">
+                <p class="paragraph-hero">Lorem ipsum</p>
+                <h1 class="title-hero">Welcome home <span class="title-span-hero">to</span> luxury</h1>
+                <a 
+                href="" 
+                class="link-hero">
+                Book a consultation
+               </a>
+            </div>
             <!-- Contaioner number -->
             <div class="hero-container-number">
                 <ul class="list-hero">
                   <li class="item-hero">
                     <p class="paragraph-hero-number">
-                        <span class="number-hero">01</span> Lorem Ipsum
+                        <span class="number-hero-span">01</span> Lorem Ipsum
                     Dolorem apset
                     </p>
                   </li>
                   <li class="item-hero">
-                    <p>
+                    <p class="paragraph-hero-number">
                         <span class="number-hero">02</span> Lorem Ipsum
                         Dolorem apset
                     </p>
                   </li>
                   <li class="item-hero">
-                    <p>
+                    <p class="paragraph-hero-number">
                         <span class="number-hero">03</span> Lorem Ipsum
                         Dolorem apset
                     </p>
@@ -158,13 +172,13 @@
             </div>
         </section>
         <!-- Section LASTED PROJECTS -->
-        <section>
+        <section class="container">
             <h2 class="title-lasted">Latest projects</h2>
             <ul class="list-lasted">
                 <li class="item-lasted">
                     <a 
                     href="" 
-                    class="link-lasted">
+                    class="link-lasted active">
                       All
                     </a>
                 </li>
@@ -183,55 +197,43 @@
                 <li class="item-projects">
                       <img 
                       src="./images/villas.jpg" 
-                      alt="villas"
-                      width="430"                      
-                      height="572" 
+                      alt="villas" 
                       class="images-projects">
                       <div class="text-images">
-                        <h3 class="title-lasted">Villas</h3>
+                        <h3 class="title-lasted-cards">Villas</h3>
                       </div>
-                    </a>
                 </li>
                 <li class="item-projects">
                         <img 
                       src="./images/townhouse.jpg" 
                       alt="villas"
-                      width="430"                      
-                      height="572" 
                       class="images-projects">
                         <div class="text-images">
-                            <h3 class="title-lasted">Townhouse</h3>
+                            <h3 class="title-lasted-cards">Townhouse</h3>
                         </div>
-                    </a>
                 </li>
                 <li class="item-projects">
                         <img 
                         src="./images/house.jpg" 
                         alt="house" 
-                        width="430" 
-                        height="572" 
                         class="images-projects">
                         <div class="text-images">
-                            <h3 class="title-lasted">Houses</h3>
+                            <h3 class="title-lasted-cards">Houses</h3>
                         </div>
-                    </a>
                 </li>
                 <li class="item-projects">
                         <img 
                         src="./images/apartaments.jpg" 
-                        alt="apartaments" 
-                        width="430" 
-                        height="572" 
+                        alt="apartaments"  
                         class="images-projects">
                         <div class="text-images">
-                            <h3 class="title-lasted">Apartments</h3>
+                            <h3 class="title-lasted-cards">Apartments</h3>
                         </div>
-                    </a>
                 </li>
             </ul>
         </section>
         <!-- Experience -->
-        <section>
+        <section class="container">
             <p class="span-experience">Our expertise</p>
             <h2 class="title-experience">"The best apartment in Dubai" we will find your dream</h2>
             <p class="paragraph-experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere
@@ -241,25 +243,19 @@
             tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac,
             molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum dapibus varius a
             lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
         <!-- QUOTE -->
-        <section>
             <div class="container-quote">
                 <p class="paragraph-quote">
                     “Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets
-                    you. What you believe, remember, you can achieve.” — Mary Kay Ash
+                    you. What you believe, remember, you can achieve.” <span class="span-quote">— Mary Kay Ash</span>
                 </p>
             </div>
-        </section>
         <!-- APARTAMENTS -->
-        <section class="">
                 <ul class="list-apartaments">
                     <li class="item-apartaments">
                         <img 
                         src="./images/apartament-2.jpg" 
                         alt="apartaments"
-                        width="543"
-                        height="312" 
                         class="images-apartaments">
                         <p class="paragraph-apartaments">
                             Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel,
@@ -275,8 +271,6 @@
                         <img 
                         src="./images/apartament-1.jpg" 
                         alt="apartaments" 
-                        width="543"
-                        height="312"
                         class="images-apartaments">
                         <p class="paragraph-apartaments">
                             Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel.
@@ -291,7 +285,7 @@
                 </ul>
         </section>
         <!-- CONTACT US -->
-        <section>
+        <section class="container container-contact">
                 <p class="paragraph-contact">
                     Do you have any questions?
                 </p>
@@ -312,7 +306,7 @@
                 </button>
         </section>
         <!-- USEFULL ARTICLES -->
-        <section>
+        <section class="container">
             <h2 class="title-articles">Useful articles</h2>
             <a 
             href="" 
@@ -324,50 +318,88 @@
                     <img 
                     src="./images/palms.jpg" 
                     alt="palms" 
-                    class="image-articles"
-                    width="300"
-                    height="300">
-                    <h3 class="title-image-articles">Discover Architecture</h3>
+                    class="image-articles">
+                    <!-- <h3 class="title-image-articles">Discover Architecture</h3> -->
+                </li>
+                <li class="item-articles-card visually-hidden">
+                    <p class="paragraph-date-card">Jule 03, 2022</p>
+                    <h3 class="title-articles-card">Discover Architecture</h3>
+                    <p class="paragraph-articles-card">
+                        Projects for many large domestic and foreign corporations, enterprises in many elds such
+                    </p>
+                    <a 
+                    href="" 
+                    class="link-articles-card">
+                        Learn more
+                    </a>
                 </li>
                 <li class="item-articles">
                     <img 
-                    src="./images/bild.jpg" 
+                    src="./images/articles-1-mob.jpg" 
                     alt="bild" 
-                    class="image-articles"
-                    width="300"
-                    height="300">
-                    <h3 class="title-image-articles">Discover Architecture</h3>
+                    class="image-articles">
+                    <!-- <h3 class="title-image-articles">Discover Architecture</h3> -->
+                </li>
+                <li class="item-articles-card visually-hidden">
+                    <p class="paragraph-date-card">Jule 03, 2022</p>
+                    <h3 class="title-articles-card">Discover Architecture</h3>
+                    <p class="paragraph-articles-card">
+                        Projects for many large domestic and foreign corporations, enterprises in many elds such
+                    </p>
+                    <a href="" class="link-articles-card">
+                        Learn more
+                    </a>
                 </li>
                 <li class="item-articles">
                     <img 
                     src="./images/apartaments-3.jpg" 
                     alt="apartaments" 
-                    class="image-articles"
-                    width="300"
-                    height="300">
-                    <h3 class="title-image-articles">Discover Architecture</h3>
+                    class="image-articles">
+                    <!-- <h3 class="title-image-articles">Discover Architecture</h3> -->
+                </li>
+                <li class="item-articles-card visually-hidden">
+                <p class="paragraph-date-card">Jule 03, 2022</p>
+                    <h3 class="title-articles-card">Discover Architecture</h3>
+                    <p class="paragraph-articles-card">
+                        Projects for many large domestic and foreign corporations, enterprises in many elds such
+                    </p>
+                    <a 
+                    href="" 
+                    class="link-articles-card">
+                        Learn more
+                    </a>
                 </li>
             </ul>
         </section>
         <!-- REVIEWS -->
-        <section>
+        <section class="container">
             <div class="container-reviews">
                 <div class="container-icon-reviews">
-                    <img src="" alt="" class="image-reviews">
+                    <img 
+                    src="./images/paul.jpg" 
+                    alt="Paul" 
+                    class="image-reviews"
+                    width="112"
+                    height="112">
                 </div>
                 <h3 class="text-reviews">Paul</h3>
-                <a href="" class="link-reviews">Owner in <span class="span-reviews">Paul.com</span></a>
+                <p class="span-reviews">Owner in <a href="" class="link-reviews">Paul.com</a></p>
                 <p class="paragraph-reviews">
                     Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B,
                 education, communication.
                 </p>
             </div>
-            <div class="container-reviews">
+            <div class="container-reviews visually-hidden">
                 <div class="container-icon-reviews">
-                    <img src="" alt="" class="image-reviews">
+                    <img 
+                    src="./images/robert.jpg" 
+                    alt="Robert" 
+                    class="image-reviews">
                 </div>
                 <h3 class="text-reviews">Robert</h3>
-                <a href="" class="link-reviews">Founder in <span class="span-reviews">Apple inc.</span></a>
+                <p class="span-reviews">
+                    Owner in <a href="" class="link-reviews">Apple.inc.</a>
+                </p>
                 <p class="paragraph-reviews">
                     Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and
                     marketing.
@@ -375,16 +407,16 @@
             </div>
         </section>
         <!-- FAQ -->
-        <section>
-            <h2>
+        <section class="container">
+            <h2 class="title-faq">
                 FAQ
             </h2>
-            <ul>
-                <li>
-                    <h3>
+            <ul class="list-faq">
+                <li class="item-faq">
+                    <h3 class="titles-faq">
                         The largest and oldest Quotations Page on the Web with about 30 categories
                     </h3>
-                    <p>
+                    <p class="paragraph-faq">
                         Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel,
                         porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id
                         tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a
@@ -394,23 +426,23 @@
                         nisl pharetra consequat. Nunc in venenatis orci.
                     </p>
                 </li>
-                <li>
-                    <h3>
+                <li class="item-faq">
+                    <h3 class="titles-faq">
                         A huge collection of inspirational quotes, thoughts of greatest minds in history
                     </h3>
                 </li>
-                <li>
-                    <h3>
+                <li class="item-faq">
+                    <h3 class="titles-faq">
                         Quotations from the great works of literature
                     </h3>
                 </li>
-                <li>
-                    <h3>
+                <li class="item-faq">
+                    <h3 class="titles-faq">
                         Read quotes and sayings from famous people in history
                     </h3>
                 </li>
-                <li>
-                    <h3>
+                <li class="item-faq">
+                    <h3 class="titles-faq">
                         Collected quotes from Albert Einstein
                     </h3>
                 </li>
@@ -424,6 +456,41 @@
                 Real Estate
             </span>
         </a>
+        <div class="buy-footer">
+            <p class="paragraph-footer">Buy</p>
+            <ul class="list-footer vi">
+                <li class="item-footer">
+                    <a href="" class="link-footer">
+                        Apartment in Dubai
+                    </a>
+                </li>
+                <li class="item-footer">
+                    <a href="" class="link-footer">
+                        House in Dubai
+                    </a>
+                </li>
+                <li class="item-footer">
+                    <a href="" class="link-footer">
+                    Apartments in Dubai
+                    </a>
+                </li>
+                <li class="item-footer">
+                    <a href="" class="link-footer">
+                        Loft in Dubai
+                    </a>
+                </li>
+                <li class="item-footer">
+                    <a href="" class="link-footer">
+                        Penthouse in Dubai
+                    </a>
+                </li>
+                <li class="item-footer">
+                    <a href="" class="link-footer">
+                        Villa in Dubai
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="services-footer">
             <p class="paragraph-footer">Services</p>
             <ul class="list-footer">
